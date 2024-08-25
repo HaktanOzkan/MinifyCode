@@ -1,48 +1,28 @@
-EN | TR
+# MinifyCode
 
-EN:
+**MinifyCode**, HTML, CSS ve JavaScript dosyalarını küçülten (minify eden) bir araçtır. Bu araç, web projelerinizdeki dosya boyutlarını azaltarak sayfa yükleme sürelerini iyileştirmenize yardımcı olur. Özellikle performans optimizasyonu ve daha hızlı kullanıcı deneyimi sağlamak için geliştirilmiştir.
 
-This code minimizes HTML, CSS, and JS codes that you create or obtain from the internet.
+## Özellikler
 
-Usage: When executed, the code presents you with 3 options:
+- HTML, CSS ve JavaScript dosyalarını küçültme.
+- Basit ve kullanıcı dostu arayüz.
+- Dosya boyutlarını önemli ölçüde azaltarak daha hızlı yükleme süreleri sağlar.
+- Web projelerinde kullanılmak üzere optimize edilmiştir.
 
-1 - Minify your CSS file
+## Gereksinimler
 
-2 - Minify your JS file
+- Java 8 veya daha yeni bir sürümü.
 
-3 - Minify your HTML file
+## Kullanım
 
-After choosing one of these options, the program will ask you for a file path. For example, if you want to minify a CSS file, you should provide a file path like this: (C:/Users/(username)/Desktop/minify-project/style.css).
+### Komut Satırı Kullanımı
 
-Once you select the file you want to minify, you'll need to specify where and under what filename the minified file should be saved. For instance: (C:/Users/(username)/Desktop/minify-project/style.min.css).
+```sh
+java -jar MinifyCode.jar <input-dosyasi> <output-dosyasi>
+```
 
-The program optimizes the specified file for minimal resource usage and saves it under the desired filename."
-
-Got it! If you need any further assistance with your coding project or anything else, feel free to ask!
-
-BEFORE:
-
-![styledosyasi](https://github.com/HaktanOzkan/MinifyCode/assets/22142037/9b5f5abd-a617-48fa-9493-77ce533f0c26)
-
-AFTER:
-
-![styledosyasimin](https://github.com/HaktanOzkan/MinifyCode/assets/22142037/ae5745b9-341b-457e-8498-597623285a4c)
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-TR:
-
-Bu kod sizin oluşturduğunuz veya internetten aldığınız HTML,CSS ve JS kodlarını minimize eder.
-
-Kullanım: Kod çalıştırıldığında size 3 seçenek sunar. Bu 3 seçenek şunlardır.
-
-1 - CSS dosyanızı küçültün
-
-2 - JS dosyanızı küçültün
-
-3 - HTML dosyanızı küçültün
-
-Bu 3 seçenekten bir tanesini seçtikten sonra uygulama sizden bir dosya yolu ister. Örneğin bir CSS dosyanızı küçültmek istiyorsunuz. Şu şekilde bir dosya yolu vermelisiniz. (C:/Users/ (username) /Desktop/minify-project/style.css).
-
-Küçültmek istediğiniz dosyayı seçtikten sonra küçültülecek olan dosyanın nereye ve hangi dosya adı ile kayıt edileceğini girmeniz gerekiyor. Örneğin: (C:/Users/ (username) /Desktop/minify-project/style.min.css)
-
-Program belirttiğiniz dosyayı minimum kaynak kullanımı için optimize eder ve istediğiniz dosya adında istediğiniz bir dosyaya kayıt eder.
+## Örnek
+```sh
+java -jar MinifyCode.jar input.html output.html
+java -jar MinifyCode.jar style.css style.min.css
+java -jar MinifyCode.jar script.js script.min.js
